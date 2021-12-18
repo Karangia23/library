@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Bookcase</title>
+    <link rel="stylesheet" href="resources/csssheets/main.css">
+</head>
+<body>
+    <div class="bookModal">
+        <form action=# class="form-container">
+            <h1>New book</h1>
+        
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Enter title" name="title" class="title" required>
+        
+            <label for="author"><b>Author</b></label>
+            <input type="text" placeholder="Enter author" name="author" class="author" required>
+
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" placeholder="120" name="pages" class="pages" required>
+
+            <label for="readStatus"></label>
+            <input type="checkbox" checked class="readStatus" name="readStatus"><b>Check if you read it</b>
+        
+            <button type="button" class="submitButton">Submit</button>
+            <button type="button" class="cancelButton">Close</button>
+          </form>
+    </div>
+    <div class="mainContainer">
+        <div class="menuContainer">
+            <h1>Library</h1>
+            <div>
+                <p>Number of Books:</p>
+                <p class="bookNumber">0</p>
+            </div>
+            <button type="button" class="newBookButton">Add book</button>
+        </div>
+        <div class="bookStorage">
+            
+        </div>
+    </div>
+</body>
+<script src="proto.js">
+</script>
+</html>
