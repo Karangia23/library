@@ -1,0 +1,65 @@
+h1 {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 26px;
+  letter-spacing: -1.8px;
+  word-spacing: 0.8px;
+  color: #FF9770;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: oblique;
+  font-variant: small-caps;
+  text-transform: none;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #888;
+  width: auto;
+}
+
+.numberContainer {
+
+}
+
+.mainContainer {
+
+}
+
+.bookStorage {
+
+}
+
+.bookSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3967ff;
+  border-style: solid;
+  border-color: rgb(214, 193, 0);
+  margin: 10px  10px ;
+}
+
+.bookModal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
