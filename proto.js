@@ -14,6 +14,10 @@ function Book(title,author,pages,isRead) {
   this.index = 0
 }
 
+function swapBooks(oldPos, newPos){
+  
+}
+
 function changeReadStatus(buttonElement){
   if(buttonElement.innerText == "Read"){
     buttonElement.style.backgroundColor = "#af0707"
@@ -53,6 +57,13 @@ function removeBook(element){
   }
 }
 
+// function swapBooks(button){
+//   let parent = button.parentNode
+//   if(button.id == "upBtn"){
+//     if 
+//   }
+// }
+
 function makeBookSheet(bookIndex){
   let bookCard = document.createElement("div")
 
@@ -70,6 +81,10 @@ function makeBookSheet(bookIndex){
 
   let removeButton = document.createElement("button")
   let readButton = document.createElement("button")
+  // let upButton = document.createElement("button")
+  // upButton.id = "upBtn"
+  // let downButton = document.createElement("button")
+  // downButton.id = "dwnBtn"
 
   removeButton.textContent = "Delete book"
 
@@ -88,21 +103,24 @@ function makeBookSheet(bookIndex){
   bookCard.appendChild(pages)
   bookCard.appendChild(removeButton)
   bookCard.appendChild(readButton)
+  // bookCard.appendChild(upButton)
+  // bookCard.appendChild(downButton)
 
   readButton.addEventListener("click", ()=>{changeReadStatus(readButton)})
   removeButton.addEventListener("click", ()=>{removeBook(removeButton)})
+  // upButton.addEventListener("click", ()=>)
 
   bookContainer.appendChild(bookCard)
 }
 
-const removeChilds = (parent) => {
+const removeChildren = (parent) => {
   while (parent.lastChild) {
       parent.removeChild(parent.lastChild);
   }
 };
 
 function showEveryBook(){
-  removeChilds(bookContainer)
+  removeChildren(bookContainer)
   for(let i=0; i<myLibrary.length; i++){
     makeBookSheet(i)
   }
@@ -131,3 +149,4 @@ function main(){
 }
 
 main()
+
